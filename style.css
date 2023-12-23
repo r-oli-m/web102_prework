@@ -1,29 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 
 body {
+    margin: 0;
+    /*by resetting these values, you ensure a consistent starting point across browsers*/
+    padding: 0;
     font-family: 'Cabin';
     background-color: #758190;
 }
 
-#tentacles {
-    width: 50px;
+.topnav {
+    overflow: hidden;
+    display: flex;
+    background-color: #3498db;
+    /* Change to a color that fits your scheme */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
 }
 
-.header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+.topnav h1 {
+    margin: 0;
+    font-size: 24px;
+    /* Adjust font size */
+    color: #ecf0f1;
+    /* Adjust font color */
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    /* Background color on hover */
+    color: black;
+    /* Text color on hover */
+}
+
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    /* Float the search input to the right */
+    padding: 6px;
+    /* Padding for the search input */
+    margin-top: 8px;
+    /* Margin from the top */
+    margin-right: 16px;
+    /* Margin from the right */
+    border: none;
+    /* Remove border */
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+        align-items: flex-start;
+        /* Align items to the start of the container */
+        height: 70px;
+    }
+    .home-container {
+        margin-top: 70px; /* Adjust this value based on your design for smaller screens */
+    }
+    .topnav a,
+    .topnav input[type=text] {
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+#tentacles {
+    width: 10%;
+}
+
+.home-container {
+    margin-top: 15%; 
 }
 
 .stats-container {
     display: flex;
-    align-items: center; /*is this even doing anything bc of wrap?*/
+    align-items: center;
+    /*is this even doing anything bc of wrap?*/
 }
-.stats-container:hover{
+
+.stats-container:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
 }
@@ -37,7 +120,9 @@ body {
     text-align: center;
 }
 
-#num-contributions, #total-raised, #num-games {
+#num-contributions,
+#total-raised,
+#num-games {
     font-size: 50px;
 }
 
