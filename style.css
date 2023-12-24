@@ -11,11 +11,11 @@ body {
 .topnav {
     overflow: hidden;
     display: flex;
-    background-color: #3498db;
+    background-color: #7dcbff;
     /* Change to a color that fits your scheme */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,7 +31,7 @@ body {
     /* Adjust font color */
 }
 
-.topnav a {
+.topnav a.nav-link {
     float: left;
     display: block;
     color: #ecf0f1;
@@ -43,19 +43,16 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.topnav a:hover {
+.topnav a.nav-link:hover {
     background-color: #ddd;
-    /* Background color on hover */
     color: black;
-    /* Text color on hover */
 }
 
-
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
+.topnav a.nav-link.active {
     background-color: #2196F3;
     color: white;
 }
+
 
 /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
@@ -65,12 +62,14 @@ body {
     /* Padding for the search input */
     margin-top: 8px;
     /* Margin from the top */
-    margin-right: 16px;
+    margin-right: 45px;
     /* Margin from the right */
     border: none;
     /* Remove border */
     border-radius: 3px;
     font-size: 17px;
+    width: 300px;
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -93,7 +92,7 @@ body {
 }
 
 #tentacles {
-    width: 10%;
+    width: 40px;
 }
 
 .home-container {
