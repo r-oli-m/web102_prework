@@ -3,62 +3,117 @@
 body {
     background-color: #219dbc37;
     font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
 }
 
-h1{
+h1 {
     font-family: 'Rubik Doodle Shadow', sans-serif;
-    text-shadow: #7fcef5 0px 0px 10px;
+    text-shadow: rgb(47, 200, 255) 0px 0px 10px;
 }
-h2{
+
+h2 {
     font-family: 'Rubik Scribble';
 }
+
 p {
     font-family: 'Afacad', sans-serif;
 }
 
-#tentacles {
-    width: 50px;
+
+header h1 {
+    float: left;
+    margin-left: 35px;
 }
 
-.header {
+header.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+    align-items: center;
+    text-align: center;
+}
+
+header {
     position: fixed;
     top: 0;
-    width: 100%;
-    display: flex;
     background-color: #ffdf8e;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    width: 100%;
 }
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0px 60px;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 15px 25px;
+    padding-top: 23px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: "Afacad", sans-serif;
+}
+
 #dratini {
     float: right;
     margin-top: -6em;
-}
-.home {
-    margin-top: 8em;
+    margin: right 20px;
 }
 
+.home {
+    margin-top: 7em;
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+.statstitle {
+    margin-left: 35px;
+    margin-right: 20px;
+}
+
+#ourgames {
+    margin-left: 35px;
+    margin-right: 20px;
+}
 
 .stats-container {
+    margin-left: 20px;
+    margin-right: 20px;
     font-family: 'Rubik Doodle Shadow', sans-serif;
     display: flex;
     align-items: center;
     text-shadow: #fac229 0px 0px 10px;
 }
+
 .stats-container p {
-    font-family: inherit; /* Inherit font-family from the parent container */
+    font-family: inherit;
+    /* Inherit font-family from the parent container */
     text-shadow: none;
 }
 
 .stats-container:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px rgb(73, 209, 255);
+    box-shadow: 0 0 30px rgb(3, 188, 255);
+    background-color: rgba(47, 200, 255, 0.214);
 }
 
 .stats-card {
-    background-color: #219dbc56;
+    background-color: rgba(119, 184, 249, 0.337);
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -69,7 +124,7 @@ p {
 #num-contributions,
 #total-raised,
 #num-games {
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #games-container {
@@ -93,6 +148,11 @@ p {
     border-radius: 7px;
 }
 
+.game-card h2 {
+    font-size: 1.5em;
+    text-shadow: rgb(47, 200, 255) 0px 0px 10px;
+}
+
 .game-card:hover {
     cursor: pointer;
     box-shadow: 0 0 30px #fac229;
@@ -107,7 +167,7 @@ button {
     font-family: 'Afacad', sans-serif;
     font-weight: bold;
     font-size: large;
-    border: 3pcx solid #006090;
+    border: 1px solid #006090;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
