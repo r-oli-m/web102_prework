@@ -1,117 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad&family=Be+Vietnam+Pro:wght@300&family=Cormorant&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
 
 body {
-    margin: 0;
-    /*by resetting these values, you ensure a consistent starting point across browsers*/
-    padding: 0;
-    font-family: 'Cabin';
-    background-color: #758190;
+    background-color: #219dbc37;
+    font-size: 1.3em;
 }
 
-.topnav {
-    overflow: hidden;
-    display: flex;
-    background-color: #7dcbff;
-    /* Change to a color that fits your scheme */
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 10px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow */
+h1{
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    text-shadow: #7fcef5 0px 0px 10px;
 }
-
-.topnav h1 {
-    margin: 0;
-    font-size: 24px;
-    /* Adjust font size */
-    color: #ecf0f1;
-    /* Adjust font color */
+h2{
+    font-family: 'Rubik Scribble';
 }
-
-.topnav a.nav-link {
-    float: left;
-    display: block;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.topnav a.nav-link:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.nav-link.active {
-    background-color: #2196F3;
-    color: white;
-}
-
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-    float: right;
-    /* Float the search input to the right */
-    padding: 6px;
-    /* Padding for the search input */
-    margin-top: 8px;
-    /* Margin from the top */
-    margin-right: 45px;
-    /* Margin from the right */
-    border: none;
-    /* Remove border */
-    border-radius: 3px;
-    font-size: 17px;
-    width: 300px;
-    
-}
-
-@media screen and (max-width: 600px) {
-    .topnav {
-        flex-direction: column;
-        /* Stack items vertically on small screens */
-        align-items: flex-start;
-        /* Align items to the start of the container */
-        height: 70px;
-    }
-    .home-container {
-        margin-top: 70px; /* Adjust this value based on your design for smaller screens */
-    }
-    .topnav a,
-    .topnav input[type=text] {
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
+p {
+    font-family: 'Afacad', sans-serif;
 }
 
 #tentacles {
-    width: 40px;
+    width: 50px;
 }
 
-.home-container {
-    margin-top: 15%; 
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #ffdf8e;
+    padding: 1%;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
 }
+#dratini {
+    float: right;
+    margin-top: -6em;
+}
+.home {
+    margin-top: 8em;
+}
+
 
 .stats-container {
+    font-family: 'Rubik Doodle Shadow', sans-serif;
     display: flex;
     align-items: center;
-    /*is this even doing anything bc of wrap?*/
+    text-shadow: #fac229 0px 0px 10px;
+}
+.stats-container p {
+    font-family: inherit; /* Inherit font-family from the parent container */
+    text-shadow: none;
 }
 
 .stats-container:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px rgb(73, 209, 255);
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #219dbc56;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
@@ -148,7 +95,8 @@ body {
 
 .game-card:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px #fac229;
+    background-color: #fae8d6;
 }
 
 #button-container {
@@ -156,9 +104,21 @@ body {
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
+    font-family: 'Afacad', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border: 3pcx solid #006090;
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    box-shadow: 5px 5px 4px #00609077;
+    cursor: pointer;
+}
+
+button:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
 }
