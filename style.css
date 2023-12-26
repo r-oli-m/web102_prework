@@ -2,7 +2,7 @@
 
 body {
     background-color: #219dbc37;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 0px;
     padding: 0px;
 }
@@ -20,6 +20,11 @@ p {
     font-family: 'Afacad', sans-serif;
 }
 
+nav {
+    float: right;
+    align-items: center;
+    text-align: center;
+}
 
 header h1 {
     float: left;
@@ -29,12 +34,7 @@ header h1 {
 header.container {
     width: 80%;
     margin: 0 auto;
-}
-
-nav {
-    float: right;
-    align-items: center;
-    text-align: center;
+    padding: 10px;
 }
 
 header {
@@ -48,6 +48,15 @@ header::after {
     content: "";
     display: table;
     clear: both;
+}
+
+[id]::before {
+    display: block;
+    content: " ";
+    margin-top: -120px;
+    height: 120px;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 nav ul {
@@ -102,7 +111,6 @@ nav a {
 
 .stats-container p {
     font-family: inherit;
-    /* Inherit font-family from the parent container */
     text-shadow: none;
 }
 
@@ -126,7 +134,9 @@ nav a {
 #num-games {
     font-size: 70px;
 }
-
+#ourgames-description {
+    margin-left: 33px;
+}
 #games-container {
     display: flex;
     flex-wrap: wrap;
@@ -149,7 +159,7 @@ nav a {
 }
 
 .game-card h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: rgb(47, 200, 255) 0px 0px 10px;
 }
 
@@ -162,6 +172,7 @@ nav a {
 #button-container {
     text-align: center;
 }
+
 
 button {
     font-family: 'Afacad', sans-serif;
