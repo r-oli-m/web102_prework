@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='/home/reva/Videos/SeaMonsterSiteWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='videos/SeaMonsterSiteWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with peek (https://github.com/phw/peek) 
 
